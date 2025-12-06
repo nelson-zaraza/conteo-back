@@ -2516,8 +2516,8 @@ app.get('/api/health', async (req, res) => {
     }
 });
 
-// app.listen(PORT, () => {
-//     console.log(`Servidor corriendo en puerto ${PORT}`);
-//     console.log(`Sistema de Inventario con SuperAdmin`);
-//     console.log(`Health check: http://localhost:${PORT}/api/health`);
-// });
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en puerto ${PORT}`);
+    console.log(`Sistema de Inventario con SuperAdmin`);
+    console.log(`Health check: http://localhost:${PORT}/api/health`);
+});
