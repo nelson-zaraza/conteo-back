@@ -1,0 +1,20 @@
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  external_node_modules = [
+    "express",
+    "mysql2",
+    "multer",
+    "cors",
+    "jsonwebtoken",
+    "bcryptjs",
+    "nodemailer",
+    "xlsx",
+    "serverless-http"
+  ]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
