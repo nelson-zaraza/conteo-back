@@ -19,7 +19,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://lighthearted-lily-6ab87d.netlify.app", // tu frontend
+    origin: "https://lighthearted-lily-6ab87d.netlify.app/", // tu frontend
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
