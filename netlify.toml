@@ -1,0 +1,14 @@
+# netlify.toml
+
+# Configuración de las funciones
+[functions]
+  directory = "netlify/functions" 
+  node_bundler = "esbuild"      rendimiento
+
+# Redirección (Proxy)
+# Mapea todas las peticiones a /api/* a tu función "api"
+# Esto es vital para que tu frontend (https://lighthearted-lily-6ab87d.netlify.app)
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
